@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 9.70785 )
+extents = Vector2( 8, 8 )
 
 [node name="player" type="KinematicBody2D"]
 
@@ -22,8 +22,8 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 8.34465e-07, -0.107912 )
-scale = Vector2( 0.909091, 0.778423 )
+position = Vector2( -0.0293554, -0.030784 )
+scale = Vector2( 0.975802, 0.975802 )
 shape = SubResource( 1 )
 
 
