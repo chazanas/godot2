@@ -8,6 +8,7 @@ const MOTION_SPEED = 600 # Pixels/second
 const TILE_PORTAL = 1
 var motionString = ""
 
+
 func _physics_process(delta):
 	var motion = Vector2()	
 	if get_slide_count() > 0 || motionString == "":

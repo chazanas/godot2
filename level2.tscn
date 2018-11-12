@@ -34,6 +34,9 @@ radius = 10.0
 
 [node name="colworld" type="Node2D"]
 
+scale = Vector2( 3, 3 )
+_sections_unfolded = [ "Transform" ]
+
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
 mode = 0

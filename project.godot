@@ -11,7 +11,8 @@ config_version=3
 [application]
 
 config/name="Kinematic Collision"
-run/main_scene="res://level3.tscn"
+run/main_scene="res://level1.tscn"
+run/disable_stdout=true
 config/icon="res://icon.png"
 
 [gdnative]
