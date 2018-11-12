@@ -70,12 +70,12 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="portal" type="Sprite" parent="." index="2"]
 
-position = Vector2( 233.136, 119.705 )
+position = Vector2( 393.848, 232.203 )
 texture = ExtResource( 3 )
 
 [node name="Area2D" type="Area2D" parent="." index="3"]
 
-position = Vector2( 232.857, 120.581 )
+position = Vector2( 269.851, 120.581 )
 scale = Vector2( 0.267747, 0.211708 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -88,6 +88,7 @@ script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 
+position = Vector2( 460.938, 525.657 )
 shape = SubResource( 3 )
 
 [node name="caixa" type="KinematicBody2D" parent="." index="4"]
