@@ -37,11 +37,17 @@ func _physics_process(delta):
 	move_and_slide(motion)
 	if get_slide_count() > 0: 
 		for i in range(get_slide_count()):
-			var coll_pos = get_slide_collision(i).position
+			var coll_pos = get_slide_collision(i).collider
+			if coll_pos == get_parent().get_node("caixa"):
+				var box = coll_pos
+				box.set_motion(motion)
+				motionString = ""
 					
 			##var collidingWith = get_collision_pos()
 			##print("hit1")
-			var tile = get_parent().get_node("TileMap").get_cellv(get_parent().get_node("TileMap").world_to_map(coll_pos))
-			print(tile);
-			if tile == TILE_PORTAL:
-				print("hit")
+			
+			
+			
+			#print(tile);
+			#if tile == TILE_PORTAL:
+				#print("hit")

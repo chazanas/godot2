@@ -60,7 +60,7 @@ position = Vector2( 473.038, 248.42 )
 
 [node name="Area2D" type="Area2D" parent="." index="2"]
 
-position = Vector2( 488.42, 233.359 )
+position = Vector2( 489.616, 217.817 )
 scale = Vector2( 0.273974, 0.249067 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -79,7 +79,7 @@ shape = SubResource( 3 )
 
 [node name="portal" type="Sprite" parent="." index="3"]
 
-position = Vector2( 489.297, 233.359 )
+position = Vector2( 489.297, 217.419 )
 texture = ExtResource( 4 )
 
 
