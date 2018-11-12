@@ -4,16 +4,14 @@ extends KinematicBody2D
 # move_and_slide works.
 
 # Member variables
-const MOTION_SPEED = 300 # Pixels/second
+const MOTION_SPEED = 600 # Pixels/second
 const TILE_PORTAL = 1
 var motionString = ""
 
 func _physics_process(delta):
-	var motion = Vector2()
-	
+	var motion = Vector2()	
 	if get_slide_count() > 0 || motionString == "":
-		if Input.is_action_pressed("move_up"):	
-				
+		if Input.is_action_pressed("move_up"):					
 			motionString = "move_up"
 		if Input.is_action_pressed("move_bottom"):
 			motionString = "move_bottom"
@@ -24,13 +22,23 @@ func _physics_process(delta):
 	
 	if motionString == "move_up":
 		motion += Vector2(0, -1)
-	if motionString == "move_bottom":
+		$AnimatedSprite.animation = "up"
+		$AnimatedSprite.play()		
+	if motionString == "move_bottom":		
 		motion += Vector2(0, 1)
+		$AnimatedSprite.animation = "down"
+		$AnimatedSprite.play()
 	if motionString == "move_left":
 		motion += Vector2(-1, 0)
+		$AnimatedSprite.animation = "left"
+		$AnimatedSprite.play()
 	if motionString == "move_right":
 		motion += Vector2(1, 0)
-		
+		$AnimatedSprite.animation = "right"
+		$AnimatedSprite.play()
+	
+	if self.is_on_wall():
+		$AnimatedSprite.stop()
 	
 	motion = motion.normalized() * MOTION_SPEED	
 	
