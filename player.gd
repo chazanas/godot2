@@ -20,6 +20,10 @@ func _physics_process(delta):
 			motionString = "move_left"
 		if Input.is_action_pressed("move_right"):
 			motionString = "move_right"
+		if Input.is_action_just_pressed("reset"):
+			motionString = ""
+			get_tree().change_scene(get_tree().get_current_scene().filename)
+			
 	
 	if motionString == "move_up":
 		motion += Vector2(0, -1)
