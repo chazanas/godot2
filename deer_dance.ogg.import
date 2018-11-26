@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/deer_dance.ogg-dbff514c01d5fe0c07f9302627661f39.oggstr"
+
+[deps]
+
+source_file="res://deer_dance.ogg"
+dest_files=[ "res://.import/deer_dance.ogg-dbff514c01d5fe0c07f9302627661f39.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
