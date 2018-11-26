@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Harry Potter Themesong (Fail Recorder Cover).ogg-6db083ab6047457f492f60fee56b3987.oggstr"
+
+[deps]
+
+source_file="res://Harry Potter Themesong (Fail Recorder Cover).ogg"
+dest_files=[ "res://.import/Harry Potter Themesong (Fail Recorder Cover).ogg-6db083ab6047457f492f60fee56b3987.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
