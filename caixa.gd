@@ -4,7 +4,7 @@ extends KinematicBody2D
 # move_and_slide works.
 
 # Member variables
-const MOTION_SPEED = 300 # Pixels/second
+const MOTION_SPEED = 400 # Pixels/second
 const TILE_PORTAL = 1
 var motionString = ""
 var motionLast = Vector2(0,0)
