@@ -76,8 +76,8 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="portal" type="Sprite" parent="." index="2"]
 
-position = Vector2( 392.536, 89.0138 )
-scale = Vector2( 0.0759345, 0.0759345 )
+position = Vector2( 394.184, 89.2852 )
+scale = Vector2( 0.0683243, 0.0683242 )
 texture = ExtResource( 3 )
 
 [node name="player" parent="." index="3" instance=ExtResource( 4 )]
