@@ -55,7 +55,14 @@ func _physics_process(delta):
 				var box = coll_pos
 				box.set_motion(motion)
 				motionString = ""
-					
+			if coll_pos == get_parent().get_node("caixa2"):
+				var box = coll_pos
+				box.set_motion(motion)
+				motionString = ""
+			if coll_pos == get_parent().get_node("caixa3"):
+				var box = coll_pos
+				box.set_motion(motion)
+				motionString = ""
 			##var collidingWith = get_collision_pos()
 			##print("hit1")
 			

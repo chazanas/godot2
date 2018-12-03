@@ -14,6 +14,6 @@ func _process(delta):
 	# Update game logic here.
 	if get_overlapping_bodies().size() == 1 :
 		print('hit!!!')
-		get_tree().change_scene("res://level5.tscn")
+		get_tree().change_scene("res://winScene.tscn")
 	#else:
 		#print('not_hit!')
